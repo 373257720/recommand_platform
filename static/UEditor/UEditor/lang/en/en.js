@@ -240,10 +240,10 @@ UE.I18N['en'] = {
         'static':{
             'lang_background_normal':'Normal',
             'lang_background_local':'Online',
-            'lang_background_set':'Background Set',
+            'lang_background_set':'BackgroundSet',
             'lang_background_none':'No Background',
             'lang_background_colored':'Colored Background',
-            'lang_background_color':'Color Set',
+            'lang_background_color':'ColorSet',
             'lang_background_netimg':'Net-Image',
             'lang_background_align':'Align Type',
             'lang_background_position':'Position',
