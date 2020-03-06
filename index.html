@@ -1,10 +1,9 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>moblie</title><link href=/static/css/app.22156929f21fc75b5b5809e64674c77a.css rel=stylesheet></head><body><script type=text/javascript>(function (designWidth, maxWidth) {
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0"><title>moblie</title><link href=/static/css/app.67577cb21e08d057177ca1d25114dc8c.css rel=stylesheet></head><body><script type=text/javascript>(function (designWidth, maxWidth) {
       var doc = document,
         win = window,
         docEl = doc.documentElement,
         remStyle = document.createElement("style"),
         tid;
-
       function refreshRem() {
         var width = docEl.getBoundingClientRect().width;
         maxWidth = maxWidth || 540;
@@ -12,7 +11,6 @@
         var rem = width * 100 / designWidth;
         remStyle.innerHTML = 'html{font-size:' + rem + 'px;}';
       }
-
       if (docEl.firstElementChild) {
         // console.log(docEl.firstElementChild);
         docEl.firstElementChild.appendChild(remStyle);
@@ -43,6 +41,6 @@
           doc.body.style.fontSize = "16px";
         }, false);
       }
-    })(1080, 1080);</script><div id=app></div><script type=text/javascript src=/static/js/manifest.2ae2e69a05c33dfc65f8.js></script><script type=text/javascript src=/static/js/vendor.04a9bc8fd92ed81fde6e.js></script><script type=text/javascript src=/static/js/app.ead80198e9ae80a4549d.js></script></body></html><style>body{
+    })(1080,540);</script><div id=app></div><script type=text/javascript src=/static/js/manifest.2ae2e69a05c33dfc65f8.js></script><script type=text/javascript src=/static/js/vendor.04a9bc8fd92ed81fde6e.js></script><script type=text/javascript src=/static/js/app.a8afc3600be0fc41a869.js></script></body></html><style>body{
   /* height: initial; */
 }</style>
