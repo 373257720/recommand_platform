@@ -26,14 +26,12 @@
         clearTimeout(tid); //防止执行两次
         tid = setTimeout(refreshRem, 300);
       }, false);
-
       win.addEventListener("pageshow", function (e) {
         if (e.persisted) { // 浏览器后退的时候重新计算
           clearTimeout(tid);
           tid = setTimeout(refreshRem, 300);
         }
       }, false);
-
       if (doc.readyState === "complete") {
         doc.body.style.fontSize = "16px";
       } else {
@@ -41,6 +39,6 @@
           doc.body.style.fontSize = "16px";
         }, false);
       }
-    })(1080,540);</script><div id=app></div><script type=text/javascript src=/static/js/manifest.2ae2e69a05c33dfc65f8.js></script><script type=text/javascript src=/static/js/vendor.04a9bc8fd92ed81fde6e.js></script><script type=text/javascript src=/static/js/app.14e304b75b7c72ee3d8b.js></script></body></html><style>body{
+    })(1080,540);</script><div id=app></div><script type=text/javascript src=/static/js/manifest.2ae2e69a05c33dfc65f8.js></script><script type=text/javascript src=/static/js/vendor.04a9bc8fd92ed81fde6e.js></script><script type=text/javascript src=/static/js/app.94cbb64a3ed1581754dc.js></script></body></html><style>body{
   /* height: initial; */
 }</style>
