@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0"><title>moblie</title><link href=/static/css/app.539b223a8b737292714b0e26564feda9.css rel=stylesheet></head><body><script type=text/javascript>(function (designWidth, maxWidth) {
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0"><title>moblie</title><link href=/static/css/app.00a11d96494034bcda69d5c64631a063.css rel=stylesheet></head><body><script type=text/javascript>(function (designWidth, maxWidth) {
       var doc = document,
         win = window,
         docEl = doc.documentElement,
@@ -6,8 +6,18 @@
         tid;
       function refreshRem() {
         var width = docEl.getBoundingClientRect().width;
+        var height = win.innerHeight;
         maxWidth = maxWidth || 540;
-        width > maxWidth && (width = maxWidth);
+        if(width>height){
+          if(width>1000){
+            width=540
+          }else {
+            width=300;
+          }
+        }else{
+          width > maxWidth && (width = maxWidth);
+        }
+        // console.log(width)
         var rem = width * 100 / designWidth;
         remStyle.innerHTML = 'html{font-size:' + rem + 'px;}';
       }
@@ -40,6 +50,7 @@
         }, false);
       }
     })(1080,540);
+
     // (function rotate(){
     //   var orientation=window.orientation;
     //   var pd = null;
@@ -85,6 +96,6 @@
     //     document.getElementById('preventTran').style.display='none';
     //     rotate();
     //   };
-    // })();</script><div id=app></div><script type=text/javascript src=/static/js/manifest.2ae2e69a05c33dfc65f8.js></script><script type=text/javascript src=/static/js/vendor.ac473c3d72f1cbc1ce94.js></script><script type=text/javascript src=/static/js/app.c9862444e3bb60e0d8ec.js></script></body></html><style>body{
+    // })();</script><div id=app></div><script type=text/javascript src=/static/js/manifest.2ae2e69a05c33dfc65f8.js></script><script type=text/javascript src=/static/js/vendor.04a9bc8fd92ed81fde6e.js></script><script type=text/javascript src=/static/js/app.fc586d6d62f7807ad961.js></script></body></html><style>body{
   /* height: initial; */
 }</style>
