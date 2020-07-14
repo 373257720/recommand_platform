@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0"><title>bit-bro.biz</title><link href=/static/css/app.61dcd92f615e4867b3d2db1b42135036.css rel=stylesheet></head><body><script type=text/javascript>(function(designWidth, maxWidth) {
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0"><title>bit-bro.biz</title><link href=/static/css/app.d4080b32c4c7e1403f75e96ce4c9f120.css rel=stylesheet></head><body><script type=text/javascript>(function(designWidth, maxWidth) {
         var doc = document,
           win = window,
           docEl = doc.documentElement,
@@ -19,6 +19,11 @@
             }
           }
           var rem = (width * 100) / designWidth;
+          if(width>1023){
+            rem=54
+          }   
+          // console.log(rem);
+          
           remStyle.innerHTML = "html{font-size:" + rem + "px;}";
         }
         if (docEl.firstElementChild) {
@@ -62,4 +67,4 @@
             false
           );
         }
-      })(1080, 540);</script><div id=app></div><script type=text/javascript src=/static/js/manifest.c9a3f12ed8667b3b6b4c.js></script><script type=text/javascript src=/static/js/vendor.cfac212364e41026aa68.js></script><script type=text/javascript src=/static/js/app.1db1c7660de917d63dc2.js></script></body></html>
+      })(1080, 540);</script><div id=app></div><script type=text/javascript src=/static/js/manifest.73c407fae26f03de9e00.js></script><script type=text/javascript src=/static/js/vendor.cfac212364e41026aa68.js></script><script type=text/javascript src=/static/js/app.4f4c0e9157e6b311b094.js></script></body></html>
