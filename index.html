@@ -1,67 +1,23 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0"><title>bit-bro.biz</title><link href=./static/css/app.053d6e0b7ec29e62aa63fd0f046053ce.css rel=stylesheet></head><body><script type=text/javascript>(function(designWidth, maxWidth) {
-        var doc = document,
-          win = window,
-          docEl = doc.documentElement,
-          remStyle = document.createElement("style"),
-          tid;
-        function refreshRem() {
-          var width = docEl.getBoundingClientRect().width;
-          var height = win.innerHeight;
-          maxWidth = maxWidth || 540;
-          if (window.orientation == 180 || window.orientation == 0) {
-            width > maxWidth && (width = maxWidth);
-          }
-          if (window.orientation == 90 || window.orientation == -90) {
-            if (width >= 768) {
-              width = 540;
-            } else {
-              width = 360;
-            }
-          }
-          var rem = (width * 100) / designWidth;
-          if (width >= 768) {
-            rem = 54;
-          }
-          remStyle.innerHTML = "html{font-size:" + rem + "px;}";
-        }
-        if (docEl.firstElementChild) {
-          docEl.firstElementChild.appendChild(remStyle);
-        } else {
-          var wrap = doc.createElement("div");
-          wrap.appendChild(remStyle);
-          doc.write(wrap.innerHTML);
-          wrap = null;
-        }
-        //要等 wiewport 设置好后才能执行 refreshRem，不然 refreshRem 会执行2次；
-        refreshRem();
-        win.addEventListener(
-          "resize",
-          function() {
-            clearTimeout(tid); //防止执行两次
-            tid = setTimeout(refreshRem, 300);
-          },
-          false
-        );
-        win.addEventListener(
-          "pageshow",
-          function(e) {
-            if (e.persisted) {
-              // 浏览器后退的时候重新计算
-              clearTimeout(tid);
-              tid = setTimeout(refreshRem, 300);
-            }
-          },
-          false
-        );
-        if (doc.readyState === "complete") {
-          doc.body.style.fontSize = "16px";
-        } else {
-          doc.addEventListener(
-            "DOMContentLoaded",
-            function(e) {
-              doc.body.style.fontSize = "16px";
-            },
-            false
-          );
-        }
-      })(1080, 1080);</script><div id=app></div><script type=text/javascript src=./static/js/manifest.1cd4b65e4c9fcfdcb1f0.js></script><script type=text/javascript src=./static/js/vendor.25b98d1b69086a0a0fc8.js></script><script type=text/javascript src=./static/js/app.156a48bf083169f82c50.js></script></body></html>
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0"><title>bit-bro.biz</title><link href=./static/css/app.af10235d9dfc0c17c64edbd0bf46efb1.css rel=stylesheet></head><link rel=stylesheet href=./src/css/iconfont.css><body><script src=http://libs.baidu.com/jquery/2.0.0/jquery.js></script><script>// function orient() {
+      //   console.log(window.orientation);
+        
+      //   if (window.orientation == 0 || window.orientation == 180) {
+      //     $("body").attr("class", "portrait");
+      //     orientation = "portrait";
+      //     return false;
+      //   } else if (window.orientation == 90 || window.orientation == -90) {
+      //     $("body").attr("class", "portrait");
+      //     orientation = "portrait";
+
+      //     return false;
+      //   }
+      // }
+      // $(function() {
+      //   orient();
+      // });
+
+      // $(window).bind("orientationchange", function(e) {
+   
+        
+      //   orient();
+      // });</script><link rel=stylesheet href=https://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.css><div id=app></div><script type=text/javascript src=./static/js/manifest.e4ae66406aba3e4254e5.js></script><script type=text/javascript src=./static/js/vendor.f3064400a0ed440ea873.js></script><script type=text/javascript src=./static/js/app.b716ef47f0bcc4e1dcd6.js></script></body></html>
